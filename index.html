@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        (function titleScroll(text){
+            document.title = text;
+            setTimeout(function(){
+                titleScroll(text.substr(1) + text.substr(0, 1));
+            }, 500);
+        }("Hi! Welcome To My Personal Portfolio Website || "))
+    </script>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!--ICON ASSETS GOES HERE-->
+    <link rel="icon" href="img/portfolio.ico">
+
+    <!--FONTS FROM GOOGLE API GOES HERE-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!--OTHER ASSETS USED TO BUILD CUSTOM CSS GOES HERE-->
+    <link rel="stylesheet" href="assets/aos/aos.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+
+    <!--MY MAIN CSS FILE GOES HERE-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!--------------------END OF HEAD TAGS-------------------->
+
+<body>
+    
+    <!--TOGGLE BUTTON FOR MOBILE NAVIGATION GOES HERE-->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!--HEADER NAVIGATION BAR CODE GOES HERE-->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <img src="img/imgprofile.jpg" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Fikrianzi Nindyo Kusumo</a></h1>
+                <div class="social-links mt-3 text-center">
+                    <a href="https://www.instagram.com/fikrianzi" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.twitter.com/fikrianzi" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/fikrianzi" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i><span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i><span>About</span></a></li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file"></i><span>Resume</span></a></li>
+                    <li><a href="#license" class="nav-link scrollto"><i class="bx bx-certification"></i><span>License & Certification</span></a></li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--HOME SECTION CODE GOES HERE-->
+    <section id="home" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="home-container" data-aos="fade-in">
+            <h1>Fikrianzi Nindyo Kusumo</h1>
+            <p><span class="typed" data-typed-items="Hello., Thank you for visiting my portfolio website."></span></p>
+        </div>
+    </section>
+
+    <main id="main">
+        <!--ABOUT SECTION CODE GOES HERE-->
+        <section id="about" class="about">
+            <div class="container">
+              <div class="section-title">
+                <h2>About</h2>
+              </div>
+              <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                  <img src="img/photo.png" class="img-fluid photo">
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                  <h3>Fresh Graduate</h3>
+                  <p class="font-italic">
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <ul>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>7 September 1998</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 898-6299-125</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Depok, Indonesia</span></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>GPA:</strong> <span>3.71</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p style="text-justify: auto;">
+                    Hi. My name is <strong>Fikrianzi Nindyo Kusumo</strong>. I just graduated from University (Universitas Nasional) in November 2020 with a Bachelor's Degree majoring Information Systems.
+                    I am an enthusiastic, reliable, self-motivated, hard worker, responsible, conscientious in work, and eager to learn new things.<br><br>
+                    I am able to work well both in a team environment as well as using own initiative. Also, I have high attention to detail when it comes to work. I have a high interest in Web or Software Development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--SKILL SECTION ON ABOUT CODE GOES HERE-->
+          <section id="skills" class="skills section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="row skills-content">
+                  <h4>Programming Skills</h4>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="progress">
+                            <span class="skill">HTML & CSS <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">JavaScript, Bootstrap <i class="val">60%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">SQL Fundamentals <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="progress">
+                            <span class="skill">Laravel <i class="val">40%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">Java, PHP <i class="val">50%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>                        
+                        <div class="progress">
+                            <span class="skill">Node.js <i class="val">30%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row skills-content">
+                  <h4>Software Skills</h4>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="progress">
+                            <span class="skill">CorelDRAW <i class="val">60%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">Microsoft Office <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="progress">
+                            <span class="skill">Adobe Premiere <i class="val">30%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>                        
+                        <div class="progress">
+                            <span class="skill">Adobe XD <i class="val">35%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!--RESUME SECTION CODE GOES HERE-->
+          <section id="resume" class="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Bachelor of Information System</h4>
+                            <h5>Sep 2016 - Aug 2020</h5>
+                            <p><em>Universitas Nasional, Ps. Minggu, Jakarta Selatan </em><strong>(GPA: 3.71)</strong></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Graduated From High School</h4>
+                            <h5>Jul 2013 - May 2016</h5>
+                            <p><em>SMA Negeri 6 Depok, Jawa Barat </em><strong> (Science) (Final Score: 46.00)</strong></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h3 class="resume-title">Volunteer Experience</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Head of event coordinator ui/ux competition sifest 2020</h4>
+                            <h5>Dec 2019</h5>
+                            <p><em>Sistem Informasi Festival (SIFEST) 2020</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>member of public relation division on python fundamentals workshop </h4>
+                            <h5>July 2019</h5>
+                            <p><em>Himpunan Mahasiswa Sistem Informasi, Universitas Nasional</em></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
+                      <h3 class="resume-title">Organization Experience</h3>
+                      <div class="resume-item">
+                          <h4>Multimedia Division Coordinator</h4>
+                          <h5>Feb 2019 - Mar 2020</h5>
+                          <p><em>Himpunan Mahasiswa Sistem Informasi (HIMASI), Universitas Nasional </em></p>
+                          <ul>
+                              <li>Design, determine, and organize all promotional events or activities both through print and electronic media.</li>
+                              <li>Optimizing and publishing the latest information through HIMASI social media.</li>
+                              <li>Responsible for managing and maintaining on HIMASI wall magazine and website which will always be updated once a month.</li>
+                              <li>Establish good relations with organizations and institutions both within the campus and outside the campus or even other agencies.</li>
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+          <!--SECTION FOR LICENSE & CERTIFICATION CODE GOES HERE-->
+          <section id="license" class="license section-bg">
+              <div class="container">
+                  <div class="section-title">
+                    <h2>License & Certification</h2>
+                  </div>
+              <div class="license-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="row license-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-4 col-md-6 license-item filter-app">
+                      <div class="license-wrap">
+                        <img src="img/license/logicaloperation.jpg" class="img-fluid" alt="">
+                        <div class="license-links">
+                          <a href="img/license/logicaloperation.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <img src="img/license/path.jpg" class="img-fluid" alt="">
+                          <div class="license-links">
+                            <a href="img/license/path.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <img src="img/license/node.jpg" class="img-fluid">
+                          <div class="license-links">
+                            <a href="img/license/node.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <img src="img/license/javascript.jpg" class="img-fluid">
+                          <div class="license-links">
+                            <a href="img/license/javascript.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <img src="img/license/sql.jpg" class="img-fluid">
+                          <div class="license-links">
+                            <a href="img/license/sql.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <img src="img/license/git.jpg" class="img-fluid">
+                          <div class="license-links">
+                            <a href="img/license/git.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <img src="img/license/htmlcss.jpg" class="img-fluid">
+                          <div class="license-links">
+                            <a href="img/license/htmlcss.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <p></p>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row license-container" data-aos="fade-up" data-aos-delay="100">
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                        <div class="license-wrap">
+                          <img src="img/license/css.jpg" class="img-fluid" alt="">
+                          <div class="license-links">
+                            <a href="img/license/css.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 license-item filter-app">
+                          <div class="license-wrap">
+                            <img src="img/license/html.jpg" class="img-fluid" alt="">
+                            <div class="license-links">
+                              <a href="img/license/html.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 license-item filter-app">
+                          <div class="license-wrap">
+                            <img src="img/license/php.jpg" class="img-fluid">
+                            <div class="license-links">
+                              <a href="img/license/php.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 license-item filter-app">
+                          <div class="license-wrap">
+                            <img src="img/license/js.jpg" class="img-fluid">
+                            <div class="license-links">
+                              <a href="img/license/js.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 license-item filter-app">
+                          <div class="license-wrap">
+                            <img src="img/license/sqlfundamentals.jpg" class="img-fluid">
+                            <div class="license-links">
+                              <a href="img/license/sqlfundamentals.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 license-item filter-app">
+                          <div class="license-wrap">
+                            <img src="img/license/bnsp.jpg" class="img-fluid">
+                            <div class="license-links">
+                              <a href="img/license/bnsp.jpg" data-gallery="licenseGallery" class="license-lightbox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              <div class="swiper-pagination"></div>
+              </div>
+              </div>
+          </section>
+
+          <!--CONTACT FORM CODE GOES HERE-->
+          <section id="contact" class="contact">
+            <div class="container">
+              <div class="section-title">
+                <h2>Contact</h2>
+              </div>
+              <div class="row" data-aos="fade-in">
+                <div class="col-lg-5 d-inline align-items-stretch">
+                  <div class="info">
+                    <div class="address">
+                      <i class="bi bi-geo-alt"></i>
+                      <h4>Address:</h4>
+                      <p>Villa Cinere Hijau 2 Blok B2 No.8, Meruyung, Limo, Kota Depok, Jawa Barat. 16515</p>
+                    </div>
+                    <div class="email">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email:</h4>
+                      <p>nfikrianzi@gmail.com</p>
+                    </div>
+                    <div class="phone">
+                      <i class="bi bi-phone"></i>
+                      <h4>Call:</h4>
+                      <p><a href="https://wa.me/628986299125" style="color: #173b6c;">+62 8986299125</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1473166599676!2d106.76748895010645!3d-6.374975518715569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef54f00d944f%3A0xc7cc24faa03f5b37!2sVilla%20cinere%20hijau%202!5e0!3m2!1sid!2sid!4v1614403152321!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </section
+    </main>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!--JAVASCRIPT LINK FILE GOES HERE-->
+    <script src="./assets/aos/aos.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./assets/php-email-form/validate.js"></script>
+    <script src="./assets/purecounter/purecounter.js"></script>
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/typed.js/typed.min.js"></script>
+    <script src="./assets/waypoints/noframework.waypoints.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
